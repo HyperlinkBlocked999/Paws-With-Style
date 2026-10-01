@@ -90,11 +90,38 @@ body {
         border-radius: 0.5rem;
     }
 
-    input {
+    input, button, textarea, select {
         padding: 10px;
         border-radius: 0.5rem;
         border: 2px groove #FFD444;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
+
+    form label {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    form p {
+        margin-bottom: 1rem;
+    }
+
+    form input, form select, form textarea {
+        width: 100%;
+        max-width: 28rem;
+        box-sizing: border-box;
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+
+    form input:valid {
+        border: 2px green;
+    }
+
+    form input:invalid {
+        border: 2px crimson;
+    }
+
     
     @media (min-width: 768px) {  /*tablet*/
         .grid-container {
