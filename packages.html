@@ -25,19 +25,55 @@
   
    <h1>About Packages</h1>
 
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Mauris pharetra ante a lectus malesuada, eu vestibulum nisl venenatis.
-    Curabitur sed tellus vitae lorem ultricies sollicitudin.
-    Pellentesque id sapien non leo lacinia iaculis.
-    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-    Mauris consectetur urna mauris, efficitur varius orci aliquet non.
-    Aliquam ullamcorper sagittis neque, in sagittis ligula.
-    Aenean blandit ullamcorper ligula, a fermentum eros pulvinar sed. Etiam volutpat lorem et viverra pulvinar. In varius tellus et accumsan malesuada. Phasellus odio nunc, suscipit sed lorem eget, laoreet hendrerit ante. Nulla facilisi. Etiam blandit facilisis arcu non posuere. Ut elementum, justo et maximus fermentum, tellus quam varius arcu, fringilla vehicula erat erat eu erat. Integer dapibus fermentum sapien, sit amet hendrerit metus vulputate eu. Morbi eleifend, risus eget scelerisque volutpat, risus sapien eleifend dolor, in faucibus sem diam tincidunt lacus.</p>
+   <p> Packages allow you to bundle two or multiple different treatment options
+    <br>
+      Please fill out your details below as well as a set date, so you can pick what package you want
+   </p>
 
-   <p></p>
+   <form>
+  
+   <p>
+    <label for="owner-name"> Your Name</label>
+    <input type="text" id="owner-name" name="owner-name" required> 
+   </p>
 
-   <p></p>
+   <p>
+    <label for="email"> Email Adress </label>
+    <input type="email" id="email" name="email" required> 
+   </p>
 
+   <p>
+    <label for="phone"> Phone Number</label>
+    <input type="tel" id="phone" name="phone" required> 
+   </p>
+
+   <p>
+    <label for="date"> Preferred Date</label>
+    <input type="date" id="date" name="date" required> 
+   </p>
+
+   <label for="package"> Package</label>
+   <select id="package" name="package">
+  <option value=""> Chooose a Package</option>
+  <option value="basic"> Basic</option>
+  <option value="standard"> Standard</option>
+  <option value="deluxe"> Deluxe</option>
+  </select>
+
+  <br>
+  
+  <p>
+  <label for="notes">
+  Anything we should know about your dog?
+  </label>
+  <br>
+  <textarea id="notes" name="notes" rows="4">
+  </textarea>
+  </p>
+
+  <button type="submit"> Request booking</button>
+
+  </form>
 </main>
 
 <footer> <!-- At the end of every page. Contains contact details and adress, as well as copyright information -->
