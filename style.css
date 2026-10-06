@@ -21,6 +21,7 @@ body {
         margin: 0;
         padding: 0;
         border-radius: 0.5rem;
+        gap: 0.5rem;
     }
 
 
@@ -90,10 +91,14 @@ body {
         border-radius: 0.5rem;
     }
 
-    input, button, textarea, select {
-        padding: 10px;
+    .grid-item img {
         border-radius: 0.5rem;
-        border: 2px groove #FFD444;
+    }
+
+    input, button, textarea, select {
+        border-style:  groove;
+        border-color: #FFD444;
+        border-radius: 0.5rem;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 
@@ -120,6 +125,18 @@ body {
 
     form input:invalid {
         border: 2px crimson;
+    }
+
+    .services {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .services section {
+        width: 16rem;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     
